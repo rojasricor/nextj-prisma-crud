@@ -44,7 +44,7 @@ function TaskForm() {
         .then((res) => res.json())
         .then((data) => setFormData(data))
     }
-  }, [])
+  }, [params.taskId])
 
   return (
     <form
